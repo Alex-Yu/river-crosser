@@ -11,15 +11,23 @@ trait TestHelper {
     val validSolution = List(MoveRight(3), MoveRight(4), MoveRight(4), MoveRight(3), MoveRight(3))
   }
 
-  val surmountableRiver2 = new SolutionChecker("#-", 1) {
+  val surmountableRiver2 = new SolutionChecker("#--#---#----#---#-#--", 3) {
+    val validSolution = List(MoveRight(3), MoveRight(4), MoveRight(5), MoveRight(4), MoveRight(5))
+  }
+
+  val surmountableRiver3 = new SolutionChecker("#---#----#---#--#----", 13) {
+    val validSolution = List(MoveRight(13), MoveRight(12))
+  }
+
+  val surmountableRiver4 = new SolutionChecker("#-", 1) {
     val validSolution = List(MoveRight(2))
   }
 
-  val surmountableRiver3 = new SolutionChecker("#---#", 4) {
+  val surmountableRiver5 = new SolutionChecker("#---#", 4) {
     val validSolution = List(MoveRight(5))
   }
 
-  val surmountableRiver4 = new SolutionChecker("#--#-#", 4) {
+  val surmountableRiver6 = new SolutionChecker("#--#-#", 4) {
     val validSolution = List(MoveRight(3), MoveRight(3))
   }
 

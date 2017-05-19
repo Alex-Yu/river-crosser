@@ -5,7 +5,7 @@ import scala.io.StdIn._
 object Main extends App {
   trait River extends Solver with RiverUniverse
 
-  print("Enter the river template or press ENTER for default (#--#---#---#----#--#): ")
+  print("Enter the river template('#' - stone(always first in template), '-' - water) or press ENTER for default (#--#---#---#----#--#): ")
   val r = readLine()
   print("Enter initial velocity or press ENTER for default (0): ")
   val v = readLine()

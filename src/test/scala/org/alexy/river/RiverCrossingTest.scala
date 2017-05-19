@@ -9,11 +9,13 @@ class RiverCrossingTest extends Specification with TestHelper {
     "should return list of correct moves to cross the river" >> {
       surmountableRiver1.solution mustEqual surmountableRiver1.validSolution
       surmountableRiver2.solution mustEqual surmountableRiver2.validSolution
+      surmountableRiver3.solution mustEqual surmountableRiver3.validSolution
+      surmountableRiver4.solution mustEqual surmountableRiver4.validSolution
     }
 
     "should return solution with minimal moves and velocity" >> {
-      surmountableRiver3.solution mustEqual surmountableRiver3.validSolution
-      surmountableRiver4.solution mustEqual surmountableRiver4.validSolution
+      surmountableRiver5.solution mustEqual surmountableRiver5.validSolution
+      surmountableRiver6.solution mustEqual surmountableRiver6.validSolution
     }
 
     "should return empty list when it can't cross the river" >> {
